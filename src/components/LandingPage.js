@@ -82,7 +82,7 @@ const LandingPage = () => {
             <p className="max-w-[450px] text-base text-white/90 md:text-lg">
               The Metric Dashboard brings all of your business insights under one roof. Revenue metrics, social, integrations - everything.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <a
                 className="inline-flex h-12 items-center justify-center bg-black px-6 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
                 href="#"

@@ -9,7 +9,7 @@ const Pricing = () => {
   const { ref: businessRef, inView: businessInView } = useInView({ triggerOnce: true });
 
   return (
-    <div className="min-h-screen bg-blue-200 py-12 px-4">
+    <div className="min-h-screen bg-[#dde7ed] py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-[32px] text-gray-900 mb-4">Plans & Pricing</h1>

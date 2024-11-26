@@ -14,7 +14,7 @@ const Features = () => {
         <h2 className="text-2xl font-sans text-gray-400 mb-10">Everything you need to make your business grow super fast!</h2>
 
         {/* First Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-16">
+        <div className="flex flex-col md:flex-row justify-center items-center mb-16">
           <img
             ref={img1Ref}
             src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed985b4d747a_Metric-screenshot2.png"
@@ -23,11 +23,11 @@ const Features = () => {
               img1InView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           />
-          <div className="text-left md:ml-6">
+          <div className="text-center md:ml-6">
             <img
               src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed3d464d7465_iconmonstr-laptop-2-icon.svg"
               alt="Laptop Icon"
-              className="w-12 h-12 mb-4"
+              className="w-12 h-12 mb-4 mx-auto"
             />
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Web Application</h3>
             <p className="text-lg text-gray-600">
@@ -36,12 +36,13 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center mb-16">
-          <div className="text-left md:mr-6 mb-6 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-center items-center mb-16">
+          <div className="text-center md:mr-6 mb-6 md:mb-0">
+            {/* Adjusted the icon size for mobile view and center alignment */}
             <img
               src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25edd11a4d747b_iconmonstr-download-13-icon.svg"
               alt="Download Icon"
-              className="w-12 h-12 mb-4"
+              className="w-8 h-8 md:w-12 md:h-12 mb-4 mx-auto"
             />
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Mobile App</h3>
             <p className="text-lg text-gray-600">
@@ -58,8 +59,8 @@ const Features = () => {
           />
         </div>
 
-        {/* Horizontal Layout for Dashboard, Custom Rules, Presets, and Metrics */}
-        <div className="flex justify-between items-start text-left mb-40">
+        {/* Vertical Layout for Dashboard, Custom Rules, Presets, and Metrics in Mobile */}
+        <div className="flex flex-col md:flex-row justify-between items-start text-left mb-40 space-y-10 md:space-y-0">
           {/* Dashboard */}
           <div className="flex flex-col items-center w-full md:w-1/4 text-center mb-6 md:mb-0">
             <img
