@@ -74,53 +74,54 @@ const LandingPage = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-emerald-400 to-emerald-600">
-        <div className="container relative mx-auto grid min-h-[350px] max-w-7xl grid-cols-1 items-center gap-8 px-4 py-8 md:grid-cols-2 md:px-6 lg:min-h-[400px]">
-          <div className="space-y-6 text-white">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl text-left">
-              Grow Your Business 10x with Metric
-            </h1>
-            <p className="max-w-[450px] text-base text-white/90 md:text-lg">
-              The Metric Dashboard brings all of your business insights under one roof. Revenue metrics, social, integrations - everything.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <a
-                className="inline-flex h-12 items-center justify-center bg-black px-6 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
-                href="#"
-              >
-                Sign Up
-              </a>
-              <a
-                className="inline-flex h-12 items-center justify-center border border-black bg-transparent px-6 text-sm font-medium text-black transition-colors hover:bg-blue-500 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
-                href="#"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="relative z-10">
-            <img
-              id="metric-dashboard-img"
-              src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed45304d748c_Metric-screenshot5.png"
-              alt="Metric Dashboard Screenshot"
-              className={`w-full md:w-3/4 lg:w-2/3 mb-6 md:mb-0 transform transition duration-1000 ease-in-out ${
-                img1InView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}
-            />
-          </div>
-        </div>
+  <div className="container relative mx-auto grid min-h-[350px] max-w-7xl grid-cols-1 items-center gap-8 px-4 py-8 md:grid-cols-2 md:px-6 lg:min-h-[400px]">
+    <div className="space-y-6 text-white text-center md:text-left">
+      <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl">
+        Grow Your Business 10x with Metric
+      </h1>
+      <p className="max-w-[450px] text-base text-white/90 md:text-lg">
+        The Metric Dashboard brings all of your business insights under one roof. Revenue metrics, social, integrations - everything.
+      </p>
+      <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+        <a
+          className="inline-flex h-12 items-center justify-center bg-black px-6 text-sm font-medium text-white transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
+          href="#"
+        >
+          Sign Up
+        </a>
+        <a
+          className="inline-flex h-12 items-center justify-center border border-black bg-transparent px-6 text-sm font-medium text-black transition-colors hover:bg-blue-500 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
+          href="#"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+    <div className="relative z-10">
+      <img
+        id="metric-dashboard-img"
+        src="https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25ed45304d748c_Metric-screenshot5.png"
+        alt="Metric Dashboard Screenshot"
+        className={`w-full md:w-3/4 lg:w-2/3 mb-6 md:mb-0 transform transition duration-1000 ease-in-out ${
+          img1InView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+        }`}
+      />
+    </div>
+  </div>
 
-        {/* Background Image with Green Fade Effect */}
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-emerald-600 z-0" // Green gradient background
-          style={{
-            backgroundImage: "url('https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25edbdcf4d746c_analytics-graphic2.png')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center', // Keeps the image centered
-            backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-            opacity: 0.5, // Adds a fade effect
-          }}
-        />
-      </section>
+  {/* Background Image with Green Fade Effect */}
+  <div
+    className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-emerald-600 z-0"
+    style={{
+      backgroundImage: "url('https://assets.website-files.com/5e4b18d10b25ed7c5a4d7453/5e4b18d10b25edbdcf4d746c_analytics-graphic2.png')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      opacity: 0.5,
+    }}
+  />
+</section>
+
 
       {/* Press Section */}
       <section className="bg-[#3E5447] py-6">
